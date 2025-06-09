@@ -72,7 +72,7 @@ class script(object):
 
 2:- ᴍᴀᴋᴇ <a href=https://t.me/{}</a> ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
-​ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ꜰᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ ᴀʙᴏᴜᴛ
+っ◔◡◔)っ ♥ CONTACT ADMIN FOR MORE DETAILS ABOUT ♥
      ​<blockquote>@ImTgMaster</blockquote>
 
 
