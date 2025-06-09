@@ -1276,15 +1276,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🔁 ADD ME TO YOUR GROUPS 🔁', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('↔ ADD ME TO YOUR GROUP ↔', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🏷️ TRENDING', callback_data="topsearch"),
-                    InlineKeyboardButton(' 🎟️ UPGRADE', callback_data="premium"),
+                    InlineKeyboardButton('🏷 𝚃𝚁𝙴𝙽𝙳𝙸𝙽𝙶', callback_data="topsearch"),
+                    InlineKeyboardButton('🎟 𝚄𝙿𝙶𝚁𝙰𝙳𝙴', callback_data="premium"),
                 ],[
-                    InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='features'),
-                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='bot')
-                ],[
-                    InlineKeyboardButton(' 💸 EARN UNLIMITED MONEY WITH BOT 💸', callback_data="earn")
+                    InlineKeyboardButton('💸 𝙴𝙰𝚁𝙽 𝚄𝙽𝙻𝙸𝙼𝙸𝚃𝙴𝙳 𝙼𝙾𝙽𝙴𝚈 𝚆𝙸𝚃𝙷 𝙱𝙾𝚃 💸', callback_data="earn")
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
