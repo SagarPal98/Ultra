@@ -89,12 +89,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('↔ ADD ME TO YOUR GROUP ↔', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⇄ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇄', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🏷 𝚃𝚁𝙴𝙽𝙳𝙸𝙽𝙶', callback_data="topsearch"),
-                    InlineKeyboardButton('🎟 𝚄𝙿𝙶𝚁𝙰𝙳𝙴', callback_data="premium"),
+                    InlineKeyboardButton('🏷 ᴛʀᴇɴᴅɪɴɢ', callback_data="topsearch"),
+                    InlineKeyboardButton('🎟 ᴜᴘɢʀᴀᴅᴇ', callback_data="premium"),
                 ],[
-                    InlineKeyboardButton('💸 𝙴𝙰𝚁𝙽 𝚄𝙽𝙻𝙸𝙼𝙸𝚃𝙴𝙳 𝙼𝙾𝙽𝙴𝚈 𝚆𝙸𝚃𝙷 𝙱𝙾𝚃 💸', callback_data="earn")
+                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data="earn")
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
