@@ -99,7 +99,7 @@ async def SilentXBotz_start():
     await SilentX.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.B_LINK, today, time))
     try:
         for admin in ADMINS:
-            await SilentX.send_message(chat_id=admin, text=f"<b>๏ {me.mention} Restarted ✅ Click /start</code></b>")
+            await SilentX.send_message(chat_id=admin, text=f"<b>๏ {me.mention} Restarted ✅ \n\nClick On /start</code></b>")
     except:
         pass
     app = web.AppRunner(await web_server())
