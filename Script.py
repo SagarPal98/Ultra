@@ -310,7 +310,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b>{file_name}</b>\n\n<b>Uploaded By : <a href="https://t.me/TgMaster_Bots">[ImTgMaster_Bots]</a></b>"""
+    CAPTION = """<b>{file_name}</b>\n\n<b>Uploaded By : <a href="https://t.me/TgMaster_Bots">[TgMaster_Bots]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
