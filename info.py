@@ -54,8 +54,11 @@ OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ImTgMaster')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/TgMaster_Bots')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '')) 
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', ''))
+auth_channel = environ.get('AUTH_CHANNEL', '')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+auth_request_channel = environ.get('AUTH_CHANNEL', '') 
+AUTH_REQ_CHANNEL = int(auth_request_channel) if auth_request_channel and id_pattern.search(auth_request_channel) else None
+
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channel Id 
